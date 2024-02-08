@@ -2,7 +2,7 @@
 {
     public class LibSheetTotal
     {
-        int numberOfSheets = 7;
+        int numberOfSheets = 5;
         string finalOutput = "";
         public string[]? parts;
         public int userChoice = 0;
@@ -28,7 +28,7 @@
         }
         public string GetUserWord(int i)
         {
-            Console.Write("Please enter a/an " + parts[i] + ": ");
+            Console.Write("Please enter " + parts[i] + ": ");
             string newWord = Console.ReadLine();
             return newWord;
         }
@@ -104,7 +104,7 @@
             Console.WriteLine("");
             Console.WriteLine("A NOUN is a person, place, or thing.  (Fox, Dogs)");
             Console.WriteLine("An ADJECTIVE is a word that describes a noun. (Brown, Lazy)");
-            Console.WriteLine("A VERB is an action word. (Jumps)");
+            Console.WriteLine("A VERB is an action word. (Jumped)");
             Console.WriteLine("An ADVERB is a word that describes a verb. (Quickly)");
             Console.WriteLine("");
             Console.WriteLine("The Brown Fox Quickly Jumped Over the Lazy Dogs");
